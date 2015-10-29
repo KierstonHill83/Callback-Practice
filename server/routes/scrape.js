@@ -3,61 +3,7 @@ var router = express.Router();
 var request = require('request');
 var cheerio = require('cheerio');
 
-// router.get('/', function(req, res, next) {
-//   request
-//     .get('https://www.reddit.com/r/Web_Development/')
-//     .on('response', function(response) {
-//       console.log(response.statusCode);
-//       res.send(response.headers['content-type']);
-//       console.log(response);
-//   });
-// });
-
-
-
-// router.get('/', function(req, res, next) {
-//   request('https://news.ycombinator.com/', function(error, response, body) {
-//     if (!error && response.statusCode == 200) {
-//       // console.log(body);
-//       var $ = cheerio.load(body);
-//       $('span.comhead').each(function(i, element) {
-//         var a = $(this).prev();
-//         var title = a.text();
-//         var url = a.attr('href');
-
-//         var scrapedData = {
-//           title: title,
-//           url: url
-//         };
-//         res.json(scrapedData);
-//         console.log(scrapedData);
-//       });
-//     }
-//   });
-// });
-
-
-
-// router.get('/', function(req, res, next) {
-//   request('https://www.reddit.com/r/Web_Development/', function(error, response, body) {
-//     if (!error && response.statusCode == 200) {
-//       // console.log(body);
-//       var $ = cheerio.load(body);
-//       $('span.domain').each(function(i, element) {
-//         var a = $(this).prev();
-//         var title = a.text();
-//         var url = a.attr('href');
-
-//         var scrapedData = {
-//           title: title,
-//           url: url
-//         };
-//         res.json(scrapedData);
-//         console.log(scrapedData);
-//       });
-//     }
-//   });
-// });
+// my first attempt
 
 
 // router.get('/', function(req, res, next) {
